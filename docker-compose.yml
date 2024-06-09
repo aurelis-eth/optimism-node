@@ -23,7 +23,6 @@ services:
     restart: unless-stopped
     env_file:
       - ./envs/common/healthcheck.env
-      - .env
     ports:
       - ${PORT__HEALTHCHECK_METRICS:-7300}:7300
 
